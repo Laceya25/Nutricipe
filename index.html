@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style sheet link for foundation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+      crossorigin="anonymous"
+    />
+    <!--our linked style sheet-->
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Nutricipe</title>
+  </head>
+  <!--Made a very basic navbar-->
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <h1 class="title is-5">Nutricipe</h1>
+      </div>
+    </div>
+
+    <!--Area for picture-->
+    <div class="row">
+      <div class="large-12 columns">
+        <img src="" alt="Generic photo" />
+        <br /><br />
+        <h1 class="title is-1">Search Recipe</h1> <!-- Maybe we don't need this here idk-->
+        <br /><br />
+
+        <!--search bar and button-->
+        <div class="row">
+          <div class="large-8 large-centered columns">
+            <div class="input-group">
+              <input
+                type="text"
+                class="input-group-field"
+                placeholder="Enter dish type"
+              />
+              <div class="input-group-button">
+                <input type="submit" class="button" value="search" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--maybe a footer here-->
+  </body>
 </html>
