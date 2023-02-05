@@ -1,5 +1,5 @@
-# Spitball
-Tennis Appointment Scheduler 
+# Nutricipe
+Recipe Generator based on selected food  
 
 ## Description
 
