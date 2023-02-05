@@ -12,7 +12,7 @@ searchBtn.addEventListener("click", function() {
 
 // function to fetch data from api
 async function apiRequest(){
-    const recApiKey = "332e2ef599eeb54fcc43f27b932052e9d"
+    const recApiKey = "b66c48f1da5cbf78d437f8b08aa18632"
     const recApiId = "965f718b"
     let Response = await fetch("https://api.edamam.com/api/recipes/v2?type=public&app_id=" + recApiId + "&app_key" + recApiKey +"q=burger");
     console.log(Response)
