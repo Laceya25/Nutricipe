@@ -13,6 +13,9 @@ body {
    border: 50px;
     background-color: bisque;
     color: black;
+    text-align: right;
+    font-size: larger;
+    padding: 25px;
 }
 
 .footer {
