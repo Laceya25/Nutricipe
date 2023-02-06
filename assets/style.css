@@ -12,4 +12,16 @@ body {
    border-color: black;
    border: 50px;
     background-color: bisque;
+    color: black;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+
