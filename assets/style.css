@@ -6,6 +6,7 @@ body {
 .top-bar {
     background-image: url(./Images/food.jpeg);
     padding: 150px;
+    flex-wrap: wrap;
 }
 
 .topnav {
@@ -15,7 +16,16 @@ body {
     color: black;
     text-align: right;
     font-size: larger;
-    padding: 25px;
+    padding: 10px;
+}
+
+.title-is-1 {
+    font-size: 1cm;
+    text-align: center;
+}
+
+.titlenut {
+    text-align: left;
 }
 
 .footer {
@@ -27,4 +37,5 @@ body {
     color: black;
     text-align: center;
 }
+
 
