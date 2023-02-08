@@ -81,8 +81,6 @@ async function apiRequest(){
         author.innerHTML = "- " + data.author;
     }
 
-
-
+function createCard() {
 
 }
-
