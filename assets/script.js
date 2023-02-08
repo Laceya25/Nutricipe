@@ -2,10 +2,20 @@ const form = document.querySelector('form')
 let searchBtn = document.querySelector("#search")
 const article = document.querySelector('article')
 
+let searchHistory = []
+const existingSearchHistory = localStorage.getItem('searchHistory')
+if (existingSearchHistory) {
+    searchHistory = JSON.parse(existingSearchHistory);
+    console.log(searchHistory)
+    //loop over elements in the array and then call additemtosearchhistory on each.
+    searchHistory.forEach(element => {
+        addItemToSearchHistory(element)
+    });
+} 
 
 
+localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
 
-let searchHistory = [] 
 //input bar is wrapped in form. on event (press enter) then the function in the listener is ran
  form.addEventListener("submit", function(event) {
     console.log("pressed")
@@ -15,6 +25,8 @@ let searchHistory = []
     search = event.target.querySelector('input').value;
     searchHistory.push(search)
     //when user searches add that search to history list
+    localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+    console.log(localStorage.getItem('searchHistory'))
     addItemToSearchHistory(search)
 
     console.log(searchHistory)
