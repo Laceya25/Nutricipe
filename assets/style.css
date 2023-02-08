@@ -2,13 +2,7 @@ body {
     background-color: rgb(199, 239, 200);
 }
 
-.top-bar {
-    background: bisque;
-}
-.top-bar-left {
-    background: bisque;
-}
- .background-image {
+
     background-image: url(./Images/food.jpeg);
     height: 500px;
     width: 100%;
@@ -21,7 +15,7 @@ body {
     color: black;
     text-align: right;
     font-size: larger;
-    padding: 10px;
+  
 }
 
 .title-is-1 {
