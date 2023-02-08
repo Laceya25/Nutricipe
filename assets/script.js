@@ -1,6 +1,8 @@
-const form = document.querySelector('form')
-let searchBtn = document.querySelector("#search")
-const article = document.querySelector('article')
+const form = document.querySelector('form');
+let searchBtn = document.querySelector("#search");
+const article = document.querySelector('article');
+const quote = document.querySelector("#quote");
+const author = document.querySelector("#author");
 
 let searchHistory = []
 const existingSearchHistory = localStorage.getItem('searchHistory')
@@ -60,21 +62,27 @@ async function apiRequest(){
     const response = await fetch(recipeURL);
     //waits for completion of json
     const data = await response.json();
-    createCard();
+    for (let i = 0; i < data.hits.length; i++) {
+    
+    }
+    createCard(data.hits);
     console.log(data)
 }
+
+
 
  async function apiRequest2() {
     const quoteURL = "https://api.quotable.io/random"
     const response = await fetch(quoteURL)
     const data = await response.json();
         console.log(data)
+        
+        quote.innerHTML = data.content;
+        author.innerHTML = "- " + data.author;
     }
 
 
 
- 
-function createCard() {
 
 }
 
