@@ -38,7 +38,7 @@
       <section>
         <div class="container">
             <form><br />
-                <input type='text' placeholder="Search food type">
+                <input type='text' id=textboxSearch placeholder="Search food type">
             </form> 
         </div>
       </section>
@@ -47,7 +47,11 @@
 
     <div class="search-history">
       <h5>Search history</h5>
+      <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
+        <ul id="search-history-items"></ul> 
+      </div>
     </div>
+   
 
     <!--maybe a footer here-->
     <div class="footer">
