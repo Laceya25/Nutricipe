@@ -2,7 +2,7 @@ body {
     background-color: rgb(199, 239, 200);
 }
 
-.top-bar {
+.container-img {
     background-image: url(./Images/food.jpeg);
     padding: 150px;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@ body {
     color: black;
     text-align: right;
     font-size: larger;
-    padding: 10px;
+  
 }
 
 .title-is-1 {
