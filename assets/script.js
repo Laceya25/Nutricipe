@@ -18,6 +18,7 @@ const article = document.querySelector('article')
     console.log(search)
     //Then runs the next function to load api details
     apiRequest()
+    apiRequest2()
  
 })
 
@@ -35,6 +36,14 @@ async function apiRequest(){
     createCard();
     console.log(data)
 }
+
+ async function apiRequest2() {
+    const quoteURL = "https://api.quotable.io/random"
+    const response = await fetch(quoteURL)
+    const data = await response.json();
+        console.log(data)
+    }
+
 
 
 function createCard() {
