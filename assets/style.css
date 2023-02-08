@@ -2,10 +2,11 @@ body {
     background-color: rgb(199, 239, 200);
 }
 
-.container-img {
+
     background-image: url(./Images/food.jpeg);
-    padding: 150px;
-    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
 }
 
 .topnav {
@@ -36,13 +37,30 @@ body {
 }
 
 .footer {
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: bisque;
     color: black;
     text-align: center;
+    position: absolute;
 }
 
+.column {
+    width: 30%;
+    float: left;
+}
 
+.thing {
+    height: 300px;
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+section {
+    margin-top: 50px;
+}
