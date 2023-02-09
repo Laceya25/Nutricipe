@@ -17,14 +17,16 @@
 <body>
   <div class="top-bar">
     <div class="top-bar-left">
-      <div class="menu-text">Nutricipe</div>
+      <ul class="dropdown menu color" data-dropdown-menu>
+        <li class="menu-text">Nutricipe</li>
+      </ul>
     </div>
-    <div class="topnav">
-      <a href="#about">About</a>
+    <div class="top-bar-right">
+      <a class="active" href="#About Us">Aboout Us</a>
     </div>
   </div>
 
-  <img class="background-image" /> <!--Area for picture-->
+  <img class="background-image"> <!--Area for picture-->
   
       <!--search bar-->
   <section>
@@ -34,7 +36,7 @@
             <label for="middle-label" class="text-right middle">Find your food!</label>
           </div>
           <div class="small-6 cell">
-            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!" />
+            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!">
           </div>
           <div class="small-3 cell">
             <button type="submit" class="button">Submit</button>
@@ -44,57 +46,140 @@
   </section>
 
 
-  
-  <section class="row small-up-2 medium-up-3 text-center">
-    <div class="card">
-      <div class="card-section">
-        <div id="quote">Click submit for an inspirational quote!</div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x 
+                small-up-2 medium-up-4">
+      <div class="cell">
+        <div class="card">
+          <img src="
+https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+          <div class="card-section">
+          <h4>Foundation CSS Card</h4>
+            <p>This is the card body</p>
+          </div>
+        </div>
       </div>
-      <div class="card-section">
-        <div id="author"></div>
+      <div class="cell">
+        <div class="card">
+          <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+          <div class="card-section">
+            <h4>Foundation CSS Card</h4>
+            <p>This is the card body</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+          <div class="card-section">
+            <h4>Foundation CSS Card</h4>
+            <p>This is the card body</p>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+          <div class="card-section">
+            <h4>Foundation CSS Card</h4>
+            <p>This is the card body</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="grid-x grid-margin-x 
+                small-up-2 medium-up-4">
+        <div class="cell">
+          <div class="card">
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+            <div class="card-section">
+              <h4>Foundation CSS Card</h4>
+              <p>This is the card body</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+            <div class="card">
+              <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+              <div class="card-section">
+                <h4>Foundation CSS Card</h4>
+                <p>This is the card body</p>
+              </div>
+            </div>
+          </div>
+        <div class="cell">
+          <div class="card">
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+            <div class="card-section">
+              <h4>Foundation CSS Card</h4>
+              <p>This is the card body</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+            <div class="card-section">
+              <h4>Foundation CSS Card</h4>
+              <p>This is the card body</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="row small-up-2 medium-up-3 text-center">
+    <div class="column">
+      <div class="card">
+        <div class="card-section">
+          <div id="quote"></div>
+        </div>
+        <div class="card-section">
+          <div id="author"></div>
     <!--Area for picture-->
-    <!-- <div class="row">
+    <div class="row">
       <div class="large-12 columns">
+        
+        <br /><br />
+        <h1 class="title-is-1">Search Recipe</h1> <!-- Maybe we don't need this here idk-->
+        <br /><br />
 
-        <search bar>
-   
+        <!--search bar-->
+      <section>
+        <div class="container">
+            <form><br />
+                <input type='text' id=textboxSearch placeholder="Search food type">
+            </form> 
+
+        </div>
       </div>
-    </div> -->
-  </section>
+    </div>
+  </div>
   
-  <!-- <div class="row small-up-2 medium-up-3">
+  <div class="row small-up-2 medium-up-3">
     <div class="recipes">
+
+
     </div>
+    
+    
+  </div>
 
-  </div> -->
-
-<section class="search-history">
-    <div class="grid-x grid-padding-x" style="width: 400px;">
-      <h5 class="cell small-6">Search history</h5>
-      <div class="cell small-6 delete-history" >
-        <button type="reset" class="button">Delete Search History</button>
+    <div class="search-history">
+      <h5>Search history</h5>
+      <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
+        <ul id="search-history-items"></ul> 
       </div>
     </div>
-    <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
-      <ul id="search-history-items"></ul> 
-    </div>
-</section>
+   
 
-
-  <section id="about" class="about-us">
-    <h1> About Our Website</h1>
-    <p> It does not matter if you are single or a family of 5, finding various recipes that are different every day is hard. 
-      Whether it changing eating habits to be healthy, wanting to switch it up for the family or just trying something new, knowing what to make and how to make it can be a challenge. 
-      On top of that, trying to break down the nutritional value of the food within the recipes is time consuming.  
-    <br /><br />
-
-      How App Solves the Problem
-      This will taking all the guessing work out, and provide delicious meal recipes based on a food type you select and list nutritional benefits to make sure you can apply it to any goal  you may have, or just for the knowledge. 
-      This app can be used to for anyone who eats lol 
-      </p>
-  </section>
 
   <!--maybe a footer here-->
   <div class="footer">
@@ -105,22 +190,6 @@
   </footer>
   <script src="./assets/script.js"></script>
 
-  <div class="container"></div>
-  <div class="panel active"></div>
-  <h3>Fruit Recipe</h3>
-
-  <div class="container"></div>
-  <div class="panel active"></div>
-  <h3>Low Calorie Recipe</h3>
-
-
-  <div class="container"></div>
-  <div class="panel active"></div>
-  <h3>Nutrient Recipe</h3>
-
-  <div class="container"></div>
-  <div class="panel active"></div>
-  <h3>Milk Recipe</h3>
-</body>
+  
 
 </html>
