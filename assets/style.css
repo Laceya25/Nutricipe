@@ -2,11 +2,16 @@ body {
     background-color: rgb(199, 239, 200);
 }
 
+
 .top-bar {
     background: bisque;
 }
 .top-bar-left {
     background: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+   font-weight: bold;
+    
 }
  .background-image {
     background-image: url(./Images/food.jpeg);
@@ -18,10 +23,14 @@ body {
 .topnav {
    border-color: black;
     background-color: bisque;
-    color: black;
     text-align: right;
-    font-size: larger;
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
     padding: 10px;
+}
+
+.topnav a{
+    color: black;
 }
 
 .title-is-1 {
@@ -33,7 +42,7 @@ body {
     text-align: left;
 }
 
-.about-me {
+#about {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(199, 239, 200);
@@ -50,7 +59,7 @@ body {
     background-color: bisque;
     color: black;
     text-align: center;
-    position: absolute;
+    position: fixed;
 }
 
 .column {
@@ -69,4 +78,8 @@ body {
 
 section {
     margin-top: 50px;
+}
+
+.menu-text {
+    background-color: bisque;
 }
