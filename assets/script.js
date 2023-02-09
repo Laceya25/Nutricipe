@@ -25,15 +25,20 @@ localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
     event.preventDefault();
     //retrieves the value of the input inside of element form. Basically taking what you type in bar and placing it inside of api url
     search = event.target.querySelector('input').value;
-    searchHistory.push(search)
-    //when user searches add that search to history list
-    localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
-    console.log(localStorage.getItem('searchHistory'))
-    addItemToSearchHistory(search)
+    if (search) {
+        searchHistory.push(search)
+        //when user searches add that search to history list
+        localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+        console.log(localStorage.getItem('searchHistory'))
+        addItemToSearchHistory(search)
 
-    console.log(searchHistory)
-    //Then runs the next function to load api details
-    apiRequest()
+        console.log(searchHistory)
+        //Then runs the next function to load api details
+
+        removeExistingRecipeRows()
+
+        getRecipes()
+    }
     apiRequest2()
  
 })
@@ -55,7 +60,9 @@ function deleteSearchHistory () {
     deleteSearchHistoryContainer.innerHTML = '';
     localStorage.setItem('searchHistory', JSON.stringify([]));
 }
-form.addEventListener("click", function(event) {
+
+const deleteButtonElement = document.querySelector('#history-delete-button')
+deleteButtonElement.addEventListener("click", function(event) {
     deleteSearchHistory() 
 })
 
@@ -64,22 +71,57 @@ form.addEventListener("click", function(event) {
 const recApiKey = "b66c48f1da5cbf78d437f8b08aa18632"
 const recApiId = "965f718b"
 
-async function apiRequest(){
+async function getRecipes(){
     //api url
     const recipeURL = `https://api.edamam.com/search?q=${search}&app_id=${recApiId}&app_key=${recApiKey}`;
     //wait for the completion of fetch from api
     const response = await fetch(recipeURL);
     //waits for completion of json
     const data = await response.json();
-    for (let i = 0; i < data.hits.length; i++) {
+    // for (let i = 0; i < data.hits.length; i++) {
     
-    }
-    createCard(data.hits);
+    //}
+    //createCard(data.hits);
+    createRecipeRows (data.hits)
     console.log(data)
 }
 
+function createRecipeRows(recipes) {
+    const recipeElement = document.querySelector('#recipe-rows')
+    recipes.forEach((recipeObject, index) => {
+        const recipe = recipeObject.recipe
+        console.log(recipe)
+        console.log(index)
+
+        let ingredients = ''
+        recipe.ingredientLines.forEach((ingredientLine) => {
+            const ingredientDiv = `<div>${ingredientLine}</div>`
+            ingredients += ingredientDiv
+        })
 
 
+        const recipeHTML = `
+        <tr>
+            <td>${recipe.label}</td>
+            <td>${Math.floor(recipe.calories)}</td>
+            <td>${recipe.cuisineType}</td>
+            <td>${ingredients}</td>
+            <td> 
+                <img src="${recipe.image}" />
+            </td>
+        </tr>
+        `
+        recipeElement.insertAdjacentHTML('beforeend', recipeHTML)
+        
+    })
+}
+
+function removeExistingRecipeRows() {
+    const recipeElement = document.querySelector('#recipe-rows')
+    Array.from(recipeElement.children).forEach((child) => {child.remove()})
+}
+
+//todo: rename to what it does for more clarity
  async function apiRequest2() {
     const quoteURL = "https://api.quotable.io/random"
     const response = await fetch(quoteURL)

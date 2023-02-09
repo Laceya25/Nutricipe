@@ -18,15 +18,14 @@
   <div>
   <div class="top-bar">
     <div class="top-bar-left">
-        <div class="menu-text">Nutricipe</div>
-      </ul>
+      <div class="menu-text">Nutricipe</div>
     </div>
     <div class="topnav">
       <a href="#about">About</a>
     </div>
   </div>
 
-  <img class="background-image"> <!--Area for picture-->
+  <img class="background-image" /> <!--Area for picture-->
   
       <!--search bar-->
   <section>
@@ -36,31 +35,18 @@
             <label for="middle-label" class="text-right middle">Find your food!</label>
           </div>
           <div class="small-6 cell">
-            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!">
+            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!" />
           </div>
           <div class="small-3 cell">
             <button type="submit" class="button">Submit</button>
-          </div>
-          <div class="delete-history">
-            <button type="reset" class="button">Delete Search History</button>
           </div>
         </div>
     </form>
   </section>
 
-  <section id="about" class="about-us">
-    <h1> About Our Website</h1>
-    <p> It does not matter if you are single or a family of 5, finding various recipes that are different every day is hard. 
-      Whether it changing eating habits to be healthy, wanting to switch it up for the family or just trying something new, knowing what to make and how to make it can be a challenge. 
-      On top of that, trying to break down the nutritional value of the food within the recipes is time consuming.  
-   <br /><br />
 
-      How App Solves the Problem
-      This will taking all the guessing work out, and provide delicious meal recipes based on a food type you select and list nutritional benefits to make sure you can apply it to any goal  you may have, or just for the knowledge. 
-      This app can be used to for anyone who eats lol 
-      </p>
-  </section>
   
+
   <div class="row text-center">
 
 
@@ -69,29 +55,81 @@
         </div>
         <div class="card-section">
           <div id="author"></div>
-    <!--Area for picture-->
-    <div class="row">
-      <div class="large-12 columns">
 
-        <!--search bar-->
-   
+  <section class="row small-up-2 medium-up-3 text-center">
+    <div class="card">
+      <div class="card-section">
+        <div id="quote">Click submit for an inspirational quote!</div>
+      </div>
+      <div class="card-section">
+        <div id="author"></div>
       </div>
     </div>
-  </div>
+
+    <!--Area for picture-->
+    <!-- <div class="row">
+      <div class="large-12 columns">
+
+        <search bar>
+   
+      </div>
+    </div> -->
+  </section>
   
-  <div class="row small-up-2 medium-up-3">
+  <!-- <div class="row small-up-2 medium-up-3">
     <div class="recipes">
     </div>
 
-  </div>
+  </div> -->
 
-    <div class="search-history">
-      <h5>Search history</h5>
-      <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
-        <ul id="search-history-items"></ul> 
+  <section>
+    <table id="recipes">
+      <thead>
+        <tr>
+          <th>Recipe Name</th>
+          <th>Calories</th>
+          <th>Cuisine Type</th>
+          <th>Ingredients</th>
+          <th>Preview!</th>
+        </tr>
+      </thead>
+      <tbody id="recipe-rows">
+        <tr>
+          <td>Search to See Recipes</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+<section class="search-history">
+    <div class="grid-x grid-padding-x" style="width: 400px;">
+      <h5 class="cell small-6">Search history</h5>
+      <div class="cell small-6 delete-history" >
+        <button id="history-delete-button" type="reset"  class="button" >Delete Search History</button>
       </div>
     </div>
+    <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
+      <ul id="search-history-items"></ul> 
+    </div>
+</section>
 
+
+  <section id="about" class="about-us">
+    <h1> About Our Website</h1>
+    <p> It does not matter if you are single or a family of 5, finding various recipes that are different every day is hard. 
+      Whether it changing eating habits to be healthy, wanting to switch it up for the family or just trying something new, knowing what to make and how to make it can be a challenge. 
+      On top of that, trying to break down the nutritional value of the food within the recipes is time consuming.  
+    <br /><br />
+
+      How App Solves the Problem
+      This will taking all the guessing work out, and provide delicious meal recipes based on a food type you select and list nutritional benefits to make sure you can apply it to any goal  you may have, or just for the knowledge. 
+      This app can be used to for anyone who eats lol 
+      </p>
+  </section>
 
   <!--maybe a footer here-->
   <div class="footer">
@@ -102,6 +140,7 @@
   </footer>
 
 
+
   <div class="container">
     <div class="panel active" style="background-image: url('https://foodtalk4you.com/wp-content/uploads/2017/01/Recipes-Banner-1024x576.jpg')">
       <h3>Fruit Recipe</h3>
@@ -109,16 +148,21 @@
  
 
   <div class="container"></div>
-  <div class="panel active" style="background-image: url('https://foodtalk4you.com/wp-content/uploads/2017/01/Recipes-Banner-1024x576.jpg')">
-  <h3>Low Caloris Recipe</h3>
+  <div class="panel active"></div>
+  <h3>Fruit Recipe</h3>
 
 
   <div class="container"></div>
-  <div class="panel active" style="background-image: url('https://foodtalk4you.com/wp-content/uploads/2017/01/Recipes-Banner-1024x576.jpg')">
+  <div class="panel active"></div>
+  <h3>Low Calorie Recipe</h3>
+
+
+  <div class="container"></div>
+  <div class="panel active"></div>
   <h3>Nutrient Recipe</h3>
 
   <div class="container"></div>
-  <div class="panel active" style="background-image: url('https://foodtalk4you.com/wp-content/uploads/2017/01/Recipes-Banner-1024x576.jpg')">
+  <div class="panel active"></div>
   <h3>Milk Recipe</h3>
   <script src="./assets/script.js"></script>
 </body>
