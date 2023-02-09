@@ -106,6 +106,7 @@ function createRecipeRows(recipes) {
             <td>${Math.floor(recipe.calories)}</td>
             <td>${recipe.cuisineType}</td>
             <td>${ingredients}</td>
+            <td>${recipe.url}</td>
             <td> 
                 <img src="${recipe.image}" />
             </td>
