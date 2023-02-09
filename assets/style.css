@@ -70,3 +70,22 @@ body {
 section {
     margin-top: 50px;
 }
+
+.container {
+    display:flex;
+    width:90vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    border-radius: 50px;
+    color: aliceblue;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+}
+
