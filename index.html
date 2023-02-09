@@ -17,15 +17,14 @@
 <body>
   <div class="top-bar">
     <div class="top-bar-left">
-        <div class="menu-text">Nutricipe</div>
-      </ul>
+      <div class="menu-text">Nutricipe</div>
     </div>
     <div class="topnav">
       <a href="#about">About</a>
     </div>
   </div>
 
-  <img class="background-image"> <!--Area for picture-->
+  <img class="background-image" /> <!--Area for picture-->
   
       <!--search bar-->
   <section>
@@ -35,13 +34,10 @@
             <label for="middle-label" class="text-right middle">Find your food!</label>
           </div>
           <div class="small-6 cell">
-            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!">
+            <input type="text" id="middle-label" placeholder="Insert the type of food you want to cook!" />
           </div>
           <div class="small-3 cell">
             <button type="submit" class="button">Submit</button>
-          </div>
-          <div class="delete-history">
-            <button type="reset" class="button">Delete Search History</button>
           </div>
         </div>
     </form>
@@ -49,39 +45,43 @@
 
 
   
-  <div class="row small-up-2 medium-up-3 text-center">
-    <div class="column">
-      <div class="card">
-        <div class="card-section">
-          <div id="quote" />
-        </div>
-        <div class="card-section">
-          <div id="author" />
-        </div>
+  <section class="row small-up-2 medium-up-3 text-center">
+    <div class="card">
+      <div class="card-section">
+        <div id="quote">Click submit for an inspirational quote!</div>
+      </div>
+      <div class="card-section">
+        <div id="author"></div>
       </div>
     </div>
     <!--Area for picture-->
-    <div class="row">
+    <!-- <div class="row">
       <div class="large-12 columns">
 
-        <!--search bar-->
+        <search bar>
    
       </div>
-    </div>
-  </div>
+    </div> -->
+  </section>
   
-  <div class="row small-up-2 medium-up-3">
+  <!-- <div class="row small-up-2 medium-up-3">
     <div class="recipes">
     </div>
 
-  </div>
+  </div> -->
 
-    <div class="search-history">
-      <h5>Search history</h5>
-      <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
-        <ul id="search-history-items"></ul> 
+<section class="search-history">
+    <div class="grid-x grid-padding-x" style="width: 400px;">
+      <h5 class="cell small-6">Search history</h5>
+      <div class="cell small-6 delete-history" >
+        <button type="reset" class="button">Delete Search History</button>
       </div>
     </div>
+    <div style="border:1px solid green; width:400px; height:300px; overflow-y:scroll;"> 
+      <ul id="search-history-items"></ul> 
+    </div>
+</section>
+
 
   <section id="about" class="about-us">
     <h1> About Our Website</h1>
@@ -106,20 +106,20 @@
   <script src="./assets/script.js"></script>
 
   <div class="container"></div>
-  <div class="panel active" 
+  <div class="panel active"></div>
   <h3>Fruit Recipe</h3>
 
   <div class="container"></div>
-  <div class="panel active" 
-  <h3>Low Caloris Recipe</h3>
+  <div class="panel active"></div>
+  <h3>Low Calorie Recipe</h3>
 
 
   <div class="container"></div>
-  <div class="panel active" 
+  <div class="panel active"></div>
   <h3>Nutrient Recipe</h3>
 
   <div class="container"></div>
-  <div class="panel active" 
+  <div class="panel active"></div>
   <h3>Milk Recipe</h3>
 </body>
 

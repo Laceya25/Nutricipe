@@ -79,7 +79,7 @@ async function apiRequest(){
 }
 
 
-
+//todo: rename to what it does for more clarity
  async function apiRequest2() {
     const quoteURL = "https://api.quotable.io/random"
     const response = await fetch(quoteURL)
