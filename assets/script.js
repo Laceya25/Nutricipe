@@ -50,6 +50,15 @@ function addItemToSearchHistory (item) {
     searchHistoryContainer.appendChild(searchHistoryItemElement)
 }
 
+function deleteSearchHistory () {
+    var deleteSearchHistoryContainer = document.querySelector('#search-history-items')
+    deleteSearchHistoryContainer.innerHTML = '';
+    localStorage.setItem('searchHistory', JSON.stringify([]));
+}
+form.addEventListener("click", function(event) {
+    deleteSearchHistory() 
+})
+
 // function to fetch data from api
 // Api key and id for other api
 const recApiKey = "b66c48f1da5cbf78d437f8b08aa18632"
