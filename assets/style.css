@@ -102,5 +102,15 @@ section {
     margin: 10px;
     position: relative;
 }
+.view-btn{
+    text-decoration:none;
+    text-align: center;
+    width:130px;
+    padding: 10px 0;
+    color:black;
+    margin-top:20px;
+    font-size: 15px;
+    align-self : flex-start;
+}
 
 
