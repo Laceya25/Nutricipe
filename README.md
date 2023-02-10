@@ -4,15 +4,35 @@ Recipe Generator based on selected food
 ## Description
 
 This app is our Recipe Generator Website. When you enter a food of your choice into the search bar, it brings up receipes, along with calorie intake and a delightful inspirational quote! 
-Having to pick a new meal everyday can make it hard to come up with new things to try so this eliminates the guess work! Just type in any food you want, and a bunch of recipes will pop up for you to choose from that will include Calories, Cuisine Type, Ingredients and a preview of the 
-delicious meal you will be consuming! 
+Having to pick a new meal everyday can make it hard to come up with new things to try so this eliminates the guess work! Just type in any food you want, and a bunch of recipes will pop up for you to choose from that will include Calories, Cuisine Type, Ingredients and a preview of the delicious meal you will be consuming! 
 
 Ontop of all this goodness, you will also receive a insprational quote to brighten your day! 
 
-## Usage 
+## How to Use
 
-Simply put any food you want in the search bar, click submit and enjoy your choice of recipes to pick from along with your inspiration quote! 
+When you are on the homepage, simply type the food you are looking to get recipes for into the search bar and you will recieve 
+a inspirational quote followed by various recipes for your item. 
+
+If you are looking for information about our website, push the "About" button in our nav bar to be brought to a section explaining
+all about it! 
+
 
 ## Screenshot
- ![screen]()
-![screen]()
+ ![screen](./assets/Images/first.png)
+![screen](./assets/Images/Second.png)
+
+## Technology Used 
+Front End 
+
+* HTML
+* CSS
+* JavaScipt
+* API's
+
+## Our Team
+
+* Hunter Wilson - HTML, API, JavaScript, Project Board
+* Lacey Angarita - Repo, Project Board, CSS, HTML & README
+* Cam Malone - Local Storage, JavaScript, 
+* Kingsley Onyedeke - 
+
