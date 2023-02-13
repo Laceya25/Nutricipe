@@ -29,10 +29,15 @@ Front End
 * JavaScipt
 * API's
 
+## API's Used 
+
+* https://www.edamam.com/
+* https://github.com/lukePeavey/quotable
+
 ## Our Team
 
 * Hunter Wilson - HTML, API, JavaScript, Project Board
 * Lacey Angarita - Repo, Project Board, CSS, HTML & README
 * Cam Malone - Local Storage, JavaScript, 
-* Kingsley Onyedeke - 
+* Kingsley Onyedeke - Recipe Cards
 
