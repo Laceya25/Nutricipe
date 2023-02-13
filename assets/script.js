@@ -133,6 +133,3 @@ function removeExistingRecipeRows() {
         author.innerHTML = "- " + data.author;
     }
 
-function createCard() {
-
-}
