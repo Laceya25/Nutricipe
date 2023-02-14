@@ -1,6 +1,10 @@
 # Nutricipe
 Recipe Generator based on selected food  
 
+## Deployment Link 
+
+https://laceya25.github.io/Nutricipe/
+
 ## Description
 
 This app is our Recipe Generator Website. When you enter a food of your choice into the search bar, it brings up recipes, along with calorie intake and a delightful inspirational quote! 
