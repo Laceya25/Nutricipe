@@ -39,7 +39,7 @@ localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
 
         getRecipes()
     }
-    apiRequest2()
+    getQuote()
  
 })
 
@@ -122,8 +122,8 @@ function removeExistingRecipeRows() {
     Array.from(recipeElement.children).forEach((child) => {child.remove()})
 }
 
-//todo: rename to what it does for more clarity
- async function apiRequest2() {
+
+ async function getQuote() {
     const quoteURL = "https://api.quotable.io/random"
     const response = await fetch(quoteURL)
     const data = await response.json();
