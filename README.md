@@ -36,8 +36,8 @@ Front End
 
 ## Our Team
 
-* Hunter Wilson - HTML, API, JavaScript, Project Board
+* Hunter Wilson - HTML, APIs, JavaScript, Project Board
 * Lacey Angarita - Repo, Project Board, CSS, HTML & README
-* Cam Malone - Local Storage, JavaScript, 
+* Cam Malone - Local Storage, JavaScript, Built recipe card table in HTML & built a function to display info from API
 * Kingsley Onyedeke - Recipe Cards
 
